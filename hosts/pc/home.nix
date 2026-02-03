@@ -6,8 +6,8 @@
 }: {
   imports = [
     # Programs
-    ../../home/programs/brave
-    ../../home/programs/proton
+    # ../../home/programs/brave
+    # ../../home/programs/proton
     ../../home/programs/ghostty
     ../../home/programs/nvf
     ../../home/programs/shell
