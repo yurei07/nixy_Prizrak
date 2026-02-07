@@ -66,7 +66,7 @@ in {
 
       monitor = [
         "DP-1,2560x1440@165.00,0x0,1"
-        "DP-2,2560x1080@200,-1080x0,1, transform, 1"
+        "DP-2,2560x1080@200,-1080x0,1, transform, 3"
       ];
 
       workspace = [

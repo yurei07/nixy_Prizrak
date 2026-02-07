@@ -14,6 +14,7 @@
     sops-nix.url = "github:Mic92/sops-nix";
     nvf.url = "github:notashelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak";
+    prismlauncher.url = "github:Diegiwg/PrismLauncher-Cracked";
 
     home-manager = {
       url = "github:nix-community/home-manager";

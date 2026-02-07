@@ -15,6 +15,9 @@ in {
   networking.hostName = hostname;
 
   networking.networkmanager.enable = true;
+  networking.firewall.allowedTCPPorts = [4242 8384 22000];
+  networking.firewall.allowedUDPPorts = [4242 22000 21027];
+
   systemd.services.NetworkManager-wait-online.enable = false;
 
   system.autoUpgrade = {
@@ -121,7 +124,9 @@ in {
       hyprland.default = ["gtk" "hyprland"];
     };
 
-    extraPortals = [pkgs.xdg-desktop-portal-gtk];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+    ];
   };
 
   security = {

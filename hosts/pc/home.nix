@@ -6,7 +6,6 @@
 }: {
   imports = [
     # Programs
-    ../../home/programs/brave
     ../../home/programs/proton
     ../../home/programs/ghostty
     ../../home/programs/nvf
@@ -15,6 +14,7 @@
     ../../home/programs/git
     ../../home/programs/git/lazygit.nix
     # ../../home/programs/git/signing.nix # Change the key or remove this file
+    ../../home/programs/discord
     ../../home/programs/spicetify
     ../../home/programs/thunar
     ../../home/programs/nixy
@@ -53,6 +53,9 @@
       steam # games
       telegram-desktop # messager
       obs-studio
+      gemini-cli # AI
+      lan-mouse
+      syncthing
 
       # Dev
       go
@@ -78,6 +81,7 @@
       vivaldi
 
       inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
+      inputs.prismlauncher.packages."${stdenv.hostPlatform.system}".default
     ];
 
     inherit (config.var) username;

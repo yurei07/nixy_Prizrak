@@ -15,6 +15,7 @@
     ../../nixos/docker.nix
     ../../nixos/replays.nix
     ../../nixos/flatpak.nix
+    ../../nixos/syncthing.nix
 
     # You should let those lines as is
     ./hardware-configuration.nix
