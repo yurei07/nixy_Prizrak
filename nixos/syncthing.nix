@@ -27,12 +27,27 @@ in {
             devices = [
               "nixos"
             ]; # Which devices to share the folder with
+            versioning = {
+              type = "staggered";
+              params = {
+                cleanInterval = "3600"; # every 1 hour check the folder
+                maxAge = "2592000"; # max 30 days
+              };
+            };
           };
-          # "Example" = {
-          #   path = "/home/myusername/Example";
-          #   devices = ["device1"];
-          #   ignorePerms = false; # By default, Syncthing doesn't sync file permissions. This line enables it for this folder.
-          # };
+          "dev" = {
+            path = "/home/${username}/dev";
+            devices = [
+              "nixos"
+            ];
+            versioning = {
+              type = "staggered";
+              params = {
+                cleanInterval = "3600"; # every 1 hour check the folder
+                maxAge = "2592000"; # max 30 days
+              };
+            };
+          };
         };
       };
       settings.gui = {
