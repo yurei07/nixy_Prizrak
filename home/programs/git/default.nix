@@ -5,6 +5,9 @@
 in {
   programs.git = {
     enable = true;
+    extraConfig = {
+      credential.helper = "store";
+    };
     ignores = [
       ".cache/"
       ".DS_Store"
