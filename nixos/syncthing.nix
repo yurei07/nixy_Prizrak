@@ -16,8 +16,8 @@ in {
       guiAddress = "0.0.0.0:8384";
       settings = {
         devices = {
-          "asus-tuff" = {
-            id = "DEVICE-ID-GOES-HERE";
+          "nixos" = {
+            id = "JCDHPZH-MPBDYEY-Y654UWR-DD6Z6M3-CM3IY3Y-EBBMT42-725POJU-RDVHIAV";
           };
         };
         folders = {
@@ -25,7 +25,7 @@ in {
             # Name of folder in Syncthing, also the folder ID
             path = "/home/${username}/Documents"; # Which folder to add to Syncthing
             devices = [
-              "asus-tuff"
+              "nixos"
             ]; # Which devices to share the folder with
           };
           # "Example" = {

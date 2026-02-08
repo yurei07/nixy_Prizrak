@@ -78,7 +78,6 @@
 
       # Backup
       vscode
-      vivaldi
 
       inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
       inputs.prismlauncher.packages."${stdenv.hostPlatform.system}".default
@@ -88,7 +87,9 @@
     homeDirectory = "/home/" + config.var.username;
 
     # Import a profile picture, used by the caelestia dashboard
-    file.".face" = {source = ./profile_picture.png;};
+    file.".face" = {
+      source = ./profile_picture.png;
+    };
 
     # Don't touch this
     stateVersion = "24.05";
