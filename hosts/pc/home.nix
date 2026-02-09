@@ -14,7 +14,6 @@
     ../../home/programs/fetch
     ../../home/programs/git
     ../../home/programs/git/lazygit.nix
-    # ../../home/programs/git/signing.nix # Change the key or remove this file
     ../../home/programs/spicetify
     ../../home/programs/thunar
     ../../home/programs/nixy
@@ -80,7 +79,6 @@
 
       # Backup
       vscode
-      vivaldi
 
       inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
     ];
