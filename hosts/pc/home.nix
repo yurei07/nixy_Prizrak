@@ -6,9 +6,9 @@
 }: {
   imports = [
     # Programs
-    # ../../home/programs/brave
-    # ../../home/programs/proton
+    ../../home/programs/proton
     ../../home/programs/ghostty
+    ../../home/programs/discord
     ../../home/programs/nvf
     ../../home/programs/shell
     ../../home/programs/fetch
@@ -53,6 +53,11 @@
       steam # games
       telegram-desktop # messager
       obs-studio
+      asusctl
+      supergfxctl
+      powertop
+      cpufrequtils
+      lan-mouse
 
       # Dev
       go

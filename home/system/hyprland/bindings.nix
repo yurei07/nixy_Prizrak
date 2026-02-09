@@ -26,7 +26,7 @@
         "$shiftMod,down, focusmonitor, 1" # Focus next monitor
         "$shiftMod,left, layoutmsg, addmaster" # Add to master
         "$shiftMod,right, layoutmsg, removemaster" # Remove from master
-        # "$mod CTRL, R, exec, killall -SIGUSR1 gpu-screen-recorder && notify-send 'GPU-Screen-Recorder' 'Повтор успешно сохранён'"
+        "$shiftMod, R, exec, asusctl profile -p Quiet && brightnessctl set 20% && hyprctl keyword monitor ,60"
 
         ", Print, exec, hyprshot -m output"
         "SHIFT, Print, exec, hyprshot -m region"

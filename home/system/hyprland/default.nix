@@ -65,9 +65,9 @@ in {
       ];
 
       monitor = [
-        "eDP-1,1920x1080@60.00,0x0,1"
+        "eDP-1, 1920x1080@144,0x0,1"
+        # "DP-2,2560x1080@200,-1080x0,1, transform, 1"
       ];
-
       env = [
         "XDG_CURRENT_DESKTOP,Hyprland"
         "MOZ_ENABLE_WAYLAND,1"
