@@ -79,6 +79,7 @@
 
       # Backup
       vscode
+      arduino-cli
 
       inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
     ];

@@ -60,6 +60,7 @@
             inputs.nixos-hardware.nixosModules.common-cpu-intel
             inputs.nixos-hardware.nixosModules.common-gpu-nvidia-nonprime
             inputs.nixos-hardware.nixosModules.common-pc-laptop-ssd
+            inputs.nixos-hardware.nixosModules.asus-battery
             inputs.home-manager.nixosModules.home-manager
             inputs.stylix.nixosModules.stylix
             inputs.nix-flatpak.nixosModules.nix-flatpak

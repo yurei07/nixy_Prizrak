@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  lib,
+  ...
+}: {
   imports = [
     # Mostly system related configuration
     ../../nixos/nvidia.nix # CHANGEME: Remove this line if you don't have an Nvidia GPU
@@ -12,15 +16,15 @@
     ../../nixos/users.nix
     ../../nixos/utils.nix
     ../../nixos/hyprland.nix
-    # ../../nixos/docker.nix
     ../../nixos/flatpak.nix
-    ../../nixos/asus.nix
     ../../nixos/syncthing.nix
 
     # You should let those lines as is
     ./hardware-configuration.nix
     ./variables.nix
   ];
+
+  nix.channel.enable = lib.mkForce true;
 
   home-manager.users."${config.var.username}" = import ./home.nix;
 
