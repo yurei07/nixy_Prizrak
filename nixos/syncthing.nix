@@ -6,13 +6,13 @@ in {
       enable = true;
       user = "${username}";
       dataDir = "/home/${username}/Documents";
-      # configDir = "/home/${username}/.config/syncthing";
+      configDir = "/home/${username}/.config/syncthing";
       overrideDevices = true; # overrides any devices added or deleted through the WebUI
       overrideFolders = true; # overrides any folders added or deleted through the WebUI
       guiAddress = "0.0.0.0:8384";
       settings = {
         devices = {
-          "nixos" = {
+          "laptop_prizrak" = {
             id = "JCDHPZH-MPBDYEY-Y654UWR-DD6Z6M3-CM3IY3Y-EBBMT42-725POJU-RDVHIAV";
           };
         };
@@ -21,7 +21,7 @@ in {
             # Name of folder in Syncthing, also the folder ID
             path = "/home/${username}/Documents"; # Which folder to add to Syncthing
             devices = [
-              "nixos"
+              "laptop_prizrak"
             ]; # Which devices to share the folder with
             versioning = {
               type = "staggered";
@@ -34,7 +34,7 @@ in {
           "dev" = {
             path = "/home/${username}/dev";
             devices = [
-              "nixos"
+              "laptop_prizrak"
             ];
             versioning = {
               type = "staggered";
@@ -47,7 +47,7 @@ in {
         };
       };
       settings.gui = {
-        user = "nixos";
+        user = "prizrak";
         password = "$2b$05$9W3iA70SoIL87cQG/IHeQ.NOSnwKigpAVMRknQ1hAUKvFgzFOYxVO";
       };
     };

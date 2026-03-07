@@ -5,9 +5,6 @@
 in {
   programs.git = {
     enable = true;
-    extraConfig = {
-      credential.helper = "store";
-    };
     ignores = [
       ".cache/"
       ".DS_Store"
@@ -27,6 +24,7 @@ in {
       pull.rebase = "false";
       push.autoSetupRemote = true;
       color.ui = "1";
+      credential.helper = "store";
       alias = {
         essa = "push --force";
         co = "checkout";

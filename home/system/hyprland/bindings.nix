@@ -26,7 +26,7 @@
         "$shiftMod,down, focusmonitor, 1" # Focus next monitor
         "$shiftMod,left, layoutmsg, addmaster" # Add to master
         "$shiftMod,right, layoutmsg, removemaster" # Remove from master
-        "$mod CTRL, R, exec, killall -SIGUSR1 gpu-screen-recorder && notify-send 'GPU-Screen-Recorder' 'Повтор успешно сохранён'"
+        "$mod CTRL, R, exec, killall -SIGUSR1 gpu-screen-recorder && notify-send 'GPU-Screen-Recorder' 'Повтор успешно сохранен на 1 час'"
 
         ", Print, exec, hyprshot -m output"
         "SHIFT, Print, exec, hyprshot -m region"

@@ -35,6 +35,7 @@ in {
     '';
 
     shellAliases = {
+      vwin = "sudo systemctl reboot --boot-loader-entry=auto-windows";
       vim = "nvim";
       vi = "nvim";
       v = "nvim";

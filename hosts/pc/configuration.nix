@@ -16,6 +16,9 @@
     ../../nixos/replays.nix
     ../../nixos/flatpak.nix
     ../../nixos/syncthing.nix
+    ../../nixos/lanzaboote.nix
+
+    ../../home/programs/obs
 
     # You should let those lines as is
     ./hardware-configuration.nix

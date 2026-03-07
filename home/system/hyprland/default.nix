@@ -66,7 +66,7 @@ in {
 
       monitor = [
         "DP-1,2560x1440@165.00,0x0,1"
-        "DP-2,2560x1080@200,-1080x0,1, transform, 3"
+        "DP-2,2560x1080@200,-2560x0,1"
       ];
 
       workspace = [
@@ -117,7 +117,7 @@ in {
         gaps_in = gaps-in;
         gaps_out = gaps-out;
         border_size = border-size;
-        layout = "master";
+        layout = "dwindle";
         "col.inactive_border" = lib.mkForce background;
       };
 

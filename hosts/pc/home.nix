@@ -35,6 +35,7 @@
   home = {
     packages = with pkgs; [
       # Apps
+      losslesscut-bin
       vlc # Video player
       blanket # White-noise app
       obsidian # Note taking app
@@ -52,10 +53,12 @@
       killall
       steam # games
       telegram-desktop # messager
-      obs-studio
       gemini-cli # AI
       lan-mouse
       syncthing
+      arduino-cli
+      bottles
+      discord
 
       # Dev
       go
@@ -67,7 +70,7 @@
       just
       air
       duckdb
-
+      openjdk
       # Just cool
       peaclock
       cbonsai
@@ -78,6 +81,8 @@
 
       # Backup
       vscode
+
+      sbctl
 
       inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
       inputs.prismlauncher.packages."${stdenv.hostPlatform.system}".default
