@@ -75,8 +75,8 @@
 
     polarity = "dark";
     image = pkgs.fetchurl {
-      url = "https://images.hdqwalls.com/wallpapers/anime-asian-wing-girl-4k-06.jpg";
-      sha256 = "sha256-Ku/bfeeXZ3kpjS8Ew1TFnHypjFVTZOVGW/EmV/+DaTU=";
+      url = "https://images6.alphacoders.com/134/thumb-1920-1347282.png";
+      sha256 = "sha256-FrU70Nve8vD9MjOqSV8YuBt+S8obJO1Pw/nmocMazRs=";
     };
   };
 }

@@ -14,7 +14,7 @@
     configDirectory =
       "/home/"
       + config.var.username
-      + "/.config/nixos"; # The path of the nixos configuration directory
+      + "/etc/nixos"; # The path of the nixos configuration directory
 
     keyboardLayout = "us";
 
@@ -24,8 +24,8 @@
     extraLocale = "ru_RU.UTF-8";
 
     git = {
-      username = "Hadi";
-      email = "112569860+anotherhadi@users.noreply.github.com";
+      username = "yurei07";
+      email = "125127108+yurei07@users.noreply.github.com";
     };
 
     autoUpgrade = false;
