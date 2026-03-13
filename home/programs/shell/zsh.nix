@@ -35,6 +35,8 @@ in {
     '';
 
     shellAliases = {
+      u = "nh os switch /etc/nixos";
+      u-full = "(cd /etc/nixos; sudo nix flake update; nh os switch /etc/nixos)";
       vwin = "sudo systemctl reboot --boot-loader-entry=auto-windows";
       vim = "nvim";
       vi = "nvim";

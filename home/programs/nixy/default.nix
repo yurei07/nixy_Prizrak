@@ -5,11 +5,15 @@
 #- - `nixy` - UI wizard to manage the system.
 #- - `nixy rebuild` - Rebuild the system.
 #- - `nixy ...` - ... see the script for more commands.
-{ pkgs, config, ... }:
-let
+{
+  pkgs,
+  config,
+  ...
+}: let
   configDirectory = config.var.configDirectory;
 
-  nixy = pkgs.writeShellScriptBin "nixy"
+  nixy =
+    pkgs.writeShellScriptBin "nixy"
     # bash
     ''
       function exec() {
@@ -49,11 +53,11 @@ let
       [[ $1 == "" ]] && ui
 
       if [[ $1 == "rebuild" ]];then
-        cd ${configDirectory} && git add . && sudo nixos-rebuild switch --flake
+        cd ${configDirectory} && git add . && nh os switch .
       elif [[ $1 == "test" ]];then
         cd ${configDirectory} && git add . && sudo nixos-rebuild test --flake
       elif [[ $1 == "update" ]];then
-        cd ${configDirectory} && nix flake update
+        cd ${configDirectory} && sudo nix flake update; nh os switch .
       elif [[ $1 == "gc" ]];then
         echo "Starting Nix garbage collection..."
         cd ${configDirectory} && \
@@ -74,4 +78,4 @@ let
         echo "Unknown argument"
       fi
     '';
-in { home.packages = [ nixy ]; }
+in {home.packages = [nixy];}

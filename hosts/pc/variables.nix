@@ -11,10 +11,7 @@
   config.var = {
     hostname = "nixos";
     username = "prizrak";
-    configDirectory =
-      "/home/"
-      + config.var.username
-      + "/etc/nixos"; # The path of the nixos configuration directory
+    configDirectory = "/etc/nixos"; # The path of the nixos configuration directory
 
     keyboardLayout = "us";
 

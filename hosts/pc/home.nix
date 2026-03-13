@@ -18,6 +18,7 @@
     ../../home/programs/spicetify
     ../../home/programs/thunar
     ../../home/programs/nixy
+    ../../home/programs/nh
     ../../home/programs/zathura
     ../../home/programs/nightshift
     ../../home/programs/group/cybersecurity.nix
